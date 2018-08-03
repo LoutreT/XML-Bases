@@ -1,12 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
-<balise1>Ceci est une chaîne de caractères</balise1>
-<balise2>10</balise2>
-<balise3>7.5</balise3>
-
-
-
-<balise1>
-  <balise2>10</balise2>
-</balise1>
+﻿<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<repertoire>
+  <personne>Bernard</personne>
+  <personne>Patrick</personne>
+</repertoire>
