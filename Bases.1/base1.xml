@@ -1,5 +1,6 @@
 ﻿<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
-<repertoire>
-  <personne>Bernard</personne>
-  <personne>Patrick</personne>
-</repertoire>
+
+  <repertoire>
+    <personne>Robert</personne>
+    <personne>John</personne>
+  </repertoire>
