@@ -1,0 +1,9 @@
+<balise1>Ceci est une chaîne de caractères</balise1>
+<balise2>10</balise2>
+<balise3>7.5</balise3>
+
+
+
+<balise1>
+  <balise2>10</balise2>
+</balise1>
