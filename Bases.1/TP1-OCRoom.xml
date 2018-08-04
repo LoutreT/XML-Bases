@@ -1,0 +1,39 @@
+﻿<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+
+<repertoire>
+    <personne sexe="homme">
+        <prenom>Vincent</prenom>
+        <nom>N</nom>
+        <adresse>
+            <rue>Avenue de Tervueren</rue>
+            <commune>Woluwe</commune>
+            <code_postale>1150</code_postale>
+        </adresse>
+        <telephones>
+            <telephone type="portableGSM">0498</telephone>
+            <telephone type="fixeFilaire">02</telephone>
+        </telephones>
+        <adressEmail>
+            <adressEmail type="prive">cestmonmail1</adressEmail>
+            <adressEmail type="professionnel">cestmonmail2</adressEmail>
+        </adressEmail>
+    </personne>
+  
+    <personne sexe="femme">
+        <prenom>Julie</prenom>
+        <nom>B</nom>
+        <adresse>
+            <rue>Rue des cerisiers</rue>
+            <commune>Woluwe</commune>
+            <code_postale>1200</code_postale>
+        </adresse>
+        <telephones>
+            <telephone type="portableGSM">0495</telephone>
+            <telephone type="fixeFilaire">02</telephone>
+        </telephones>
+        <adressEmail>
+            <adressEmail type="prive">cestsonmail1</adressEmail>
+            <adressEmail type="professionnel">cestsonmail2</adressEmail>
+        </adressEmail>
+    </personne>
+</repertoire>
