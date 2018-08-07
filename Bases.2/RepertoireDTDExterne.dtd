@@ -1,0 +1,27 @@
+<!--Racine-->
+<! ELEMENT repertoire (personne*)>
+
+<!--Personne-->
+<!ELEMENT personne (prenom, nom, adresse, telephones, adressEmail)>
+<!ATTLIST personne sexe (homme | femme) #REQUIRED>
+
+<!-- nom et prenom-->
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+
+<!-- Bloc adresse -->
+<!ELEMENT adresse (rue, commune, code_postale)>
+<!ELEMENT rue (#PCDATA)>
+<!ELEMENT code postale (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT pays (#PCDATA)>
+
+<!--Les numéros de téléphones-->
+<!ELEMENT telephones (telephone+)>         <!--ici j'informe qu'on peut rajouter des numéros de téléphone avec + (plus)-->
+<!ELEMENT telephone (#PCDATA)>
+<!ATTLIST telephone type CDATA #REQUIRED>     <!--ici, c'est pour un des téléphones (type GSM ou Telephone fixe) -->
+
+<!--Les adresses E-mails-->
+<!ELEMENT adressEmails (adressEmail+)>
+<!ELEMENT adressEmail (#PCDATA)>     <!--ici, c'est pour un des téléphones (type GSM ou Telephone fixe) -->
+<!ATTLIST adressEmail type CDATA #REQUIRED>

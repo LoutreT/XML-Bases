@@ -1,0 +1,41 @@
+﻿<?xml version = "1.0" encoding="UTF-8" standalone="no" ?>
+
+<!DOCTYPE repertoire SYSTEM "RepertoireDTDExterne.dtd">
+
+<repertoire>
+    <personne sexe="homme">
+        <prenom>Vincent</prenom>
+        <nom>N</nom>
+        <adresse>
+            <rue>Avenue de Tervueren</rue>
+            <commune>Woluwe</commune>
+            <code_postale>1150</code_postale>
+        </adresse>
+        <telephones>
+            <telephone type="portableGSM">0498</telephone>
+            <telephone type="fixeFilaire">02</telephone>
+        </telephones>
+        <adressEmails>
+            <adressEmail type="prive">cestmon@mail1</adressEmail>
+            <adressEmail type="professionnel">cestmon@mail2</adressEmail>
+        </adressEmails>
+    </personne>
+  
+    <personne sexe="femme">
+        <prenom>Julie</prenom>
+        <nom>B</nom>
+        <adresse>
+            <rue>Rue des cerisiers</rue>
+            <commune>Woluwe</commune>
+            <code_postale>1200</code_postale>
+        </adresse>
+        <telephones>
+            <telephone type="portableGSM">0495</telephone>
+            <telephone type="fixeFilaire">02</telephone>
+        </telephones>
+        <adressEmails>
+            <adressEmail type="prive">cestson@mail1</adressEmail>
+            <adressEmail type="professionnel">cestson@mail2</adressEmail>
+        </adressEmails>
+    </personne>
+</repertoire>
