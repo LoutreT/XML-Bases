@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Type String-->
+<xsd:element name="string" type="xsd:string" />
+<!--Type String : DEMONSTRATION-->
+<string>ceci est une demonstration de string sous code xml</string>
+
+
+<!--Type Language-->
+<xsd:element name="langue" type="xsd:language" />
+<!--Type Language : DEMONSTRATION-->
+<langue>fr</langue>
+<langue>en</langue>
