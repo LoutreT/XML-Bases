@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<banque>
+    <!-- 1er client de la banque -->
+    <client>
+        <!-- identité du client -->
+        <identite>
+            <nom>Donald</nom>
+            <prenom>DUCK</prenom>
+        </identite>
+
+        <!-- liste des comptes bancaires du client -->
+        <comptes>
+            <livretA>
+                <montant>1000</montant>
+            </livretA>
+            <courant>
+                <montant>1000</montant>
+            </courant>
+        </comptes>
+    </client>
+</banque>
