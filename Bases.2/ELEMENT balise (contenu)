@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- pour les balises  : -->
-<!ELEMENT balise (contenu)>
-
-<!-- pour les attributs des balises : -->
-<!ATTLIST balise attribut (valeur 1 | valeur 2 | valeur 3 | etc.) mode >
-
