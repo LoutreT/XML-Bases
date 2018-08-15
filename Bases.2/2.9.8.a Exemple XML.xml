@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<banque xsi:noNamespaceSchemaLocation="banque.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<banque xsi:noNamespaceSchemaLocation="2.9.8.b.banque.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  
     <!-- 1er client de la banque -->
     <client>
