@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<banque xsi:noNamespaceSchemaLocation="banque.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 
+    <!-- 1er client de la banque -->
+    <client>
+        <!-- identité du client -->
+        <identite>
+            <nom>NORRIS</nom>
+            <prenom>Chuck</prenom>
+        </identite>
+
+        <!-- liste des comptes bancaires du client -->
+        <comptes>
+            <livretA>
+                <montant>2500</montant>
+            </livretA>
+            <courant>
+                <montant>4000</montant>
+            </courant>
+        </comptes>
+    </client>
+</banque>

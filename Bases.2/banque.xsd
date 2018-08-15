@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- déclaration des éléments -->
+    <xsd:element name="montant" type="xsd:double" ></xsd:element> 
+
+    <xsd:element name="identite" >
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="nom" type="xsd:string" ></xsd:element>
+                <xsd:element name="prenom" type="xsd:string" ></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="compte">
+        <xsd:sequence>
+            <xsd:element ref="montant" ></xsd:element>
+        </xsd:sequence>			
+    </xsd:complexType>
+
+    <xsd:element name="comptes">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="livretA" type="compte" ></xsd:element>
+                <xsd:element name="courant" type="compte" ></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+     </xsd:element>
+
+    <xsd:element name="client">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="identite" ></xsd:element>
+                <xsd:element ref="comptes" ></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Schéma XML -->
+    <xsd:element name="banque">
+        <xsd:complexType >
+            <xsd:sequence>
+                <xsd:element ref="client" maxOccurs="unbounded" ></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>	
+    </xsd:element>
+</xsd:schema>
