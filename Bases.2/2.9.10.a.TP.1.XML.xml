@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<repertoire>
+    <!-- Vincent Nassaux -->
+    <personne sexe="masculin">
+        <nom>NASSAUX</nom>
+        <prenom>Vincent</prenom>
+        <adresse>
+            <numero>0</numero>
+            <voie type="impasse">Avenue de Tervueren</voie>
+            <codePostal>1150</codePostal>
+            <ville>Bruxelles</ville>
+            <pays>BELGIQUE</pays>
+        </adresse>
+        <telephones>
+            <telephone type="fixe">02</telephone>
+            <telephone type="portable">0498</telephone>
+        </telephones>
+        <emails>
+            <email type="personnel">vincent@wanadoo.fr</email>
+            <email type="professionnel">nassaux@nootos.com</email>
+        </emails>
+    </personne>
+	
+    <!-- Julie -->
+    <personne sexe="feminin">
+        <nom>ELLE</nom>
+        <prenom>Julie</prenom>
+        <adresse>
+            <numero>0</numero>
+            <voie type="avenue">Rue des Cerisiers</voie>
+            <codePostal>1200</codePostal>
+            <ville>Bruxelles</ville>
+            <pays>BELGIQUE</pays>
+        </adresse>
+        <telephones>
+            <telephone type="bureau">0495</telephone>
+        </telephones>
+        <emails>
+            <email type="professionnel">elle@poppins.fr</email>
+        </emails>
+    </personne>
+</repertoire>
