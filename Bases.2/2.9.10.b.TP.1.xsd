@@ -24,8 +24,8 @@
         </xsd:simpleContent>
         </xsd:complexType>
     </xsd:element>
-    
-    <xsd:element name="codePostal">
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+    <xsd:element name="codePostal">        
         <xsd:simpleType>
         <xsd:restriction base="xsd:string">
             <xsd:pattern value="[0-9]{5}"/>                <!-- Ici j'autorise un maximum de 5 chiffre pour former un nombre -->
@@ -34,6 +34,46 @@
     </xsd:element>
     <xsd:element name="ville" type="xsd:string"/>     <!-- Ici j'intègre le slash directement à la fin de ma définition -->
     <xsd:element name="pays" type="xsd:string"/>
-    
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-    
     <!-- balise d'adresse définie dans le bon ordre grace à "SEQUENCE" qui définit l'ordre des elements -->
-    
+    <xsd:element name="adresse">
+        <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element ref="numero de rue"/>      <!-- Ici le nom de l'élément se réfère au nom à la ligne n°9 en haut -->
+            <xsd:element ref="nom de la rue"/>      <!-- Ici le nom de l'élément se réfère au nom à la ligne n°10 en haut -->
+            <xsd:element ref="codePostal"/>      <!-- Ici le nom de l'élément se réfère au nom à la ligne n°28 en haut -->
+            <xsd:element ref="ville"/>      <!-- Ici le nom de l'élément se réfère au nom à la ligne n°35 en haut -->
+            <xsd:element ref="pays"/>      <!-- Ici le nom de l'élément se réfère au nom à la ligne n°36 en haut -->
+        </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+    <!-- balises pour telephone -->
+    <xsd:element name="telephone">
+    <xsd:complexType>
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+            <xsd:attribute name="type">
+                <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="fixe"/>
+                    <xsd:enumeration value="portable"/>
+                    <xsd:enumeration value="bureau"/>                    
+                </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    </xsd:element>
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+    <!-- balise de telephone définie dans le bon ordre grace à "SEQUENCE" qui définit l'ordre des elements -->
+    <xsd:element name="telephones">
+        <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element ref="telephone" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
