@@ -107,3 +107,29 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     </xsd:element>
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
+    <!-- balise pour paramètre "personne" -->
+    <xsd:element name="personne">
+        <xsd:complexType>
+  
+            <xsd:sequence>
+                <xsd:element ref="nom"/>
+                <xsd:element ref="prenom"/>
+                <xsd:element ref="adresse"/>
+                <xsd:element ref="telephones"/>
+                <xsd:element ref="emails"/>
+            </xsd:sequence>
+            
+            <!-- attribut "sexe" -->      <!-- ici je mets l'attribut à la suite des 5 elements -->
+            <xsd:attribut name="sexe">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="masculin"/>
+                        <xsd:enumeration value="feminin"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribut>
+  
+        </xsd:complexType>
+    </xsd:element>
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
