@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
     <xsd:element name="nom" type="xsd:string"/>
     <xsd:element name="prenom" type="xsd:string"/>
-  
+
     <!-- balises pour une adresse -->
     <xsd:element name="numero de rue" type="xsd:string"/>
-    <xsd:element name="nom de la rue">      <!-- Ici je ne met pas de slash et je commence 
+    <xsd:element name="nom de la rue">      <!-- Ici je ne met pas de slash et je commence
                                                                                     à développer mon ELEMENT "nom de la rue" -->
         <xsd:complexType>
         <xsd:simpleContent>
@@ -17,7 +17,7 @@
                 <xsd:restriction base="xsd:string">
                     <xsd:enumeration value="impasse"/>
                     <xsd:enumeration value="avenue"/>
-                    <xsd:enumeration value="rue"/>                  
+                    <xsd:enumeration value="rue"/>
                 </xsd:restriction>
                 </xsd:simpleType>
             </xsd:attribute>
@@ -26,16 +26,16 @@
         </xsd:complexType>
     </xsd:element>
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-    <xsd:element name="codePostal">        
+    <xsd:element name="codePostal">
         <xsd:simpleType>
         <xsd:restriction base="xsd:string">
             <xsd:pattern value="[0-9]{5}"/>                <!-- Ici j'autorise un maximum de 5 chiffre pour former un nombre -->
-        </xsd:restriction>        
-        </xsd:simpleType>  
+        </xsd:restriction>
+        </xsd:simpleType>
     </xsd:element>
     <xsd:element name="ville" type="xsd:string"/>     <!-- Ici j'intègre le slash directement à la fin de ma définition -->
     <xsd:element name="pays" type="xsd:string"/>
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-    
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     <!-- balise d'adresse définie dans le bon ordre grace à "SEQUENCE" qui définit l'ordre des elements -->
     <xsd:element name="adresse">
         <xsd:complexType>
@@ -60,7 +60,7 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
                 <xsd:restriction base="xsd:string">
                     <xsd:enumeration value="fixe"/>
                     <xsd:enumeration value="portable"/>
-                    <xsd:enumeration value="bureau"/>                    
+                    <xsd:enumeration value="bureau"/>
                 </xsd:restriction>
                 </xsd:simpleType>
             </xsd:attribute>
@@ -111,7 +111,7 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     <!-- balise pour paramètre "personne" -->
     <xsd:element name="personne">
         <xsd:complexType>
-  
+
             <xsd:sequence>
                 <xsd:element ref="nom"/>
                 <xsd:element ref="prenom"/>
@@ -119,7 +119,7 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
                 <xsd:element ref="telephones"/>
                 <xsd:element ref="emails"/>
             </xsd:sequence>
-            
+
             <!-- attribut "sexe" -->      <!-- ici je mets l'attribut à la suite des 5 elements qui sont ci-dessus -->
             <xsd:attribut name="sexe">
                 <xsd:simpleType>
@@ -129,7 +129,7 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:attribut>
-  
+
         </xsd:complexType>
     </xsd:element>
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -140,7 +140,7 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
             <xsd:sequence>
                 <xsd:element ref="personne" maxOccurs="unbounded"/>
             </xsd:sequence>
-        </xsd:complexType>  
+        </xsd:complexType>
     </xsd:element>
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 </xsd:schema>
