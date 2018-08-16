@@ -68,7 +68,8 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
     </xsd:complexType>
     </xsd:element>
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-    <!-- balise de telephone définie dans le bon ordre grace à "SEQUENCE" qui définit l'ordre des elements -->
+    <!-- balise de telephone définie dans le bon ordre grace à "SEQUENCE" qui définit l'ordre des
+    telephone en fonction de l'occurence -->
     <xsd:element name="telephones">
         <xsd:complexType>
         <xsd:sequence>
@@ -76,4 +77,33 @@ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
         </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
+
 _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+    <!-- balise pour Email -->
+    <xsd:element name="email">
+        <xsd:complexType>
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+            <xsd:attribute name="type">
+                <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="personnel"/>
+                    <xsd:enumeration value="professionnel"/>
+                </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+    <!-- balise pour Emails -->
+    <xsd:element name="emails">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element ref="email" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    </xsd:element>
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
