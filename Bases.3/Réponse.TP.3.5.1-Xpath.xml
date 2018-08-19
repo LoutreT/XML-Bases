@@ -1,0 +1,22 @@
+﻿<nom>POPPINS</nom>
+<prenom>Marie</prenom>
+<adresse>
+  <numero>28</numero>
+  <voie type="avenue">avenue de la république</voie>
+  <codePostal>13005</codePostal>
+  <ville>MARSEILLE</ville>
+  <pays>FRANCE</pays>
+</adresse>
+<numero>28</numero>
+<voie type="avenue">avenue de la république</voie>
+<codePostal>13005</codePostal>
+<ville>MARSEILLE</ville>
+<pays>FRANCE</pays>
+<telephones>
+  <telephone type="professionnel">04 05 06 07 08</telephone>
+</telephones>
+<telephone type="professionnel">04 05 06 07 08</telephone>
+<emails>
+  <email type="professionnel">contact@poppins.fr</email>
+</emails>
+<email type="professionnel">contact@poppins.fr</email>
