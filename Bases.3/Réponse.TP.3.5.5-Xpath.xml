@@ -1,0 +1,14 @@
+﻿<personne sexe="masculin">
+  <nom>MAN</nom>
+  <prenom>Batte</prenom>
+  <adresse>
+    <numero>24</numero>
+    <voie type="avenue">impasse des héros</voie>
+    <codePostal>11004</codePostal>
+    <ville>GOTHAM CITY</ville>
+    <pays>USA</pays>
+  </adresse>
+  <telephones>
+    <telephone type="professionnel">01 03 05 07 09</telephone>
+  </telephones>
+</personne>
