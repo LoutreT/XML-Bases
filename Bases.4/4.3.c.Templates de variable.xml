@@ -1,0 +1,36 @@
+﻿<!-- Dans cet exemple, nous allons déclarer 3 variables :
+
+- La variable sexe qui contiendra le sexe d'une personne.
+- La variable nom qui contiendra le nom d'une personne.
+- La variable prenom qui contiendra le prénom d'une personne.
+
+Le but de notre template est alors d'afficher le sexe, le prénom 
+et le nom de chaque personne contenue dans le document XML :-->
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+  <xsl:template match="/">	
+  
+    <html>
+        <head>
+	          <title>Test des variables</title>
+	      </head>
+	      
+	      <body>
+	          <xsl:for-each select="repertoire/personne"> <!-- ici le Xpath à partir des 
+	          personnes pour les 3 attributs-->
+	              <xsl:variable name="sexe" select="@sexe" ></xsl:variable>
+		        <xsl:variable name="nom" select="nom" ></xsl:variable>
+		        <xsl:variable name="prenom" select="prenom" ></xsl:variable>
+		        
+            <p>
+            <xsl:value-of select="$nom"></xsl:value-of>&#160;<xsl:value-of select="$prenom"></xsl:value-of> : <xsl:value-of select="$sexe">
+            </xsl:value-of>
+            </p>		
+	          </xsl:for-each>
+        </body>
+    </html>
+    
+    </xsl:template>
+
+</xsl:stylesheet>

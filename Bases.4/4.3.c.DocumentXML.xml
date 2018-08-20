@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type="text/xsl" href="transformation.xsl" ?>
+
+<repertoire>
+
+    <!-- John DOE -->
+    <personne sexe="masculin">
+        <nom>DOE</nom>
+        <prenom>John</prenom>
+    </personne>
+	
+    <!-- Marie POPPINS -->
+    <personne sexe="feminin">
+        <nom>POPPINS</nom>
+        <prenom>Marie</prenom>
+    </personne>
+	
+    <!-- Batte MAN -->
+    <personne sexe="masculin">
+        <nom>MAN</nom>
+        <prenom>Batte</prenom>
+    </personne>
+
+</repertoire>
