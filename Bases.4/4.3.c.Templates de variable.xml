@@ -20,8 +20,8 @@ et le nom de chaque personne contenue dans le document XML :-->
 	          <xsl:for-each select="repertoire/personne"> <!-- ici le Xpath à partir des 
 	          personnes pour les 3 attributs-->
 	              <xsl:variable name="sexe" select="@sexe" ></xsl:variable>
-		        <xsl:variable name="nom" select="nom" ></xsl:variable>
-		        <xsl:variable name="prenom" select="prenom" ></xsl:variable>
+		        <xsl:variable name="nom" select="NASSAUX" ></xsl:variable>
+		        <xsl:variable name="prenom" select="Vincent" ></xsl:variable>
 		        
             <p>
             <xsl:value-of select="$nom"></xsl:value-of>&#160;<xsl:value-of select="$prenom"></xsl:value-of> : <xsl:value-of select="$sexe">
