@@ -1,0 +1,19 @@
+﻿<!-- Fichier en XML pour le fichier d'exemple "Call-Template"  -->
+<?xml version="1.0" encoding="UTF-8"?> 
+<repertoire>
+    <personne sexe="masculin">
+        <nom>DOE</nom>
+	<prenom>John</prenom>
+    </personne>
+	
+    <personne sexe="feminin">
+        <nom>POPPINS</nom>
+	<prenom>Marie</prenom>
+    </personne>
+
+    <personne sexe="masculin">
+        <nom>BATTE</nom>
+	<prenom>Man</prenom>
+    </personne>
+</repertoire>
+
