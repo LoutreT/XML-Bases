@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!-- balises isolées -->
+  <!-- écrire les balises "isolées" ici -->
+  <xsd:element name="nom" type="xsd:string"/>
+  <xsd:element name="prenom" type="xsd:string"/>
+  <xsd:element name="annee" type="xsd:string"/>
+
+  <!-- balises titre -->
+  <xsd:element name="titre">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extetension base="xsd:string">
+          <xsd:attribute name="lang" type="xsd:langage"/>
+        </xsd:extetension>
+      </xsd:simpleContent>
+    </xsd:complexType>  
+  </xsd:element>
+
+<!-- balise titres -->
+<xsd:element  name="titres">
+  <xsd:element ref="titre" type="xsd:token" minOccurs="0" maxOccurs="1"/>
+</xsd:element>
+
+<!-- balise auteur -->
+<xsd:element name="auteur">
+  <xsd:complexType>
+    <xsd:simpleContent>
+      <xsd:sequence>
+        
+      </xsd:sequence>
+    </xsd:simpleContent>
+  </xsd:ComplexType>
+</xsd:element>
+
+
+-<xsd:element name="auteur">
+
+<!-- completez la balise "auteur" ici -->
+
+
+</xsd:element>
+
+<!-- balise livre -->
+
+
+
+-<xsd:element name="livre">
+
+<!-- completez la balise "livre" ici -->
+
+
+</xsd:element>
+
+<!-- balise bibliothèque -->
+
+
+
+-<xsd:element name="bibliotheque">
+
+<!-- completez la balise "bibliotheque" ici -->
+
+
+</xsd:element>
+
+</xsd:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- balises isolées -->
+  <!-- écrire les balises "isolées" ici -->
+
+
+	<!-- balises titre -->
+	<xsd:element name="titre">
+    <!-- completez la balise "titre" ici -->
+  </xsd:element>
+    	
+  <!-- balise titres -->
+  <xsd:element name="titres" >
+    <!-- completez la balise "titres" ici -->
+  </xsd:element>
+    	
+  <!-- balise auteur -->
+  <xsd:element name="auteur">
+    <!-- completez la balise "auteur" ici -->
+  </xsd:element>
+    	
+  <!-- balise livre -->
+  <xsd:element name="livre">
+    <!-- completez la balise "livre" ici -->
+  </xsd:element>
+    	
+  <!-- balise bibliothèque -->
+  <xsd:element name="bibliotheque">
+    <!-- completez la balise "bibliotheque" ici -->
+  </xsd:element>
+</xsd:schema>
